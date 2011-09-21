@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="js-test1" default="build" basedir=".">
+
+	<target name="build">
+		<java classname="org.jsc.CompileDir" fork="true" failonerror="true" maxmemory="128m">
+			<arg value="${src}"/>
+			<arg value="${out}"/>
+			<classpath>
+				<pathelement location="../cs-compiler/lib/jcoffeescript-1.1.jar" />
+				<pathelement location="../cs-compiler/bin" />
+			</classpath>
+		</java>
+	</target>
+
+</project>
